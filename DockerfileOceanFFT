@@ -1,0 +1,12 @@
+
+FROM arm64v8/ubuntu:16.04
+
+ENV LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu/tegra:/usr/local/cuda-9.0/lib64
+RUN mkdir /data
+
+
+COPY oceanFFT /cudaSamples/
+COPY data/* /data/
+
+CMD /cudaSamples/oceanFFT
+# CMD more /cudaSamples/ocean.frag
