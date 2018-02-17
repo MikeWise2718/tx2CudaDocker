@@ -3,7 +3,16 @@
 
 # To run for example use "sudo ./tx2-docker run sample_particles &"
 
-NV_LIBS="/usr/lib/aarch64-linux-gnu"
+NV_LIBS_ORIG="/usr/lib/aarch64-linux-gnu"
+
+NV_LIBS="/usr/local/cuda-9.0/lib64 \
+         /usr/lib/aarch64-linux-gnu"
+
+NV_LIBS_O2="/usr/lib/aarch64-linux-gnu \
+           /usr/local/cuda-9.0/lib64 \
+           /usr/local/cuda-9.0/targets/aarch64-linux/lib"
+
+
 
 NV_LIBS_O1="/usr/local/cuda-9.0/targets/aarch64-linux/lib"
 
