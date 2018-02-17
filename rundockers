@@ -1,9 +1,8 @@
 #!/bin/bash
 
-sudo ./tx2-docker run sample_particles &
-sudo ./tx2-docker-ocean run sample_ocean &
-sudo ./tx2-docker run sample_nbody &
-sudo ./tx2-docker run sample_mandelbrot &
-sudo ./tx2-docker run sample_marchingcubes &
-sudo ./tx2-docker run sample_randomfog &
+./tx2-docker run sample_particles &
+./tx2-docker run sample_ocean &
+./tx2-docker run sample_nbody &
+./tx2-docker run sample_mandelbrot &
+./tx2-docker run sample_randomfog &
 

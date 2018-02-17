@@ -1,9 +1,8 @@
 #!/bin/bash
 
-sudo docker build -t sample_particles -f DockerfileParticles .
-sudo docker build -t sample_ocean -f DockerfileOceanFFT .
-sudo docker build -t sample_nbody -f DockerfileNbody .
-sudo docker build -t sample_mandelbrot -f DockerfileMandelbrot .
-sudo docker build -t sample_marchingcubes -f DockerfileMarchingCubes .
-sudo docker build -t sample_randomfog -f DockerfileRandomFog .
-sudo docker build -t device_query -f DockerfileDeviceQuery .
+docker build -t sample_particles -f DockerfileParticles .
+docker build -t sample_ocean -f DockerfileOceanFFT .
+docker build -t sample_nbody -f DockerfileNbody .
+docker build -t sample_mandelbrot -f DockerfileMandelbrot .
+docker build -t sample_randomfog -f DockerfileRandomFog .
+docker build -t device_query -f DockerfileDeviceQuery .
